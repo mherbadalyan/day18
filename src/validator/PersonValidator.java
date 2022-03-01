@@ -57,7 +57,7 @@ public class PersonValidator {
      * @param num
      * @return
      */
-    private static boolean isNum(String num) {
+    public static boolean isNum(String num) {
         if (num == null) {
             return false;
         }

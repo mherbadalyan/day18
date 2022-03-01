@@ -32,23 +32,7 @@ public class StoreValidator {
      * @return
      */
     public static boolean isValidPhoneNumber(String phoneNumber) {
-        return (phoneNumber != null && phoneNumber.length() == 8 && isNum(phoneNumber));
+        return (phoneNumber != null && phoneNumber.length() == 8 && PersonValidator.isNum(phoneNumber));
     }
-
-    /**
-     * checking is given String num
-     *
-     * @param num
-     * @return
-     */
-    private static boolean isNum(String num) {
-        for (int i = 0; i < 8; i++) {
-            if (!(num.charAt(i) >= '0' && num.charAt(i) <= '9')) {
-                return false;
-            }
-        }
-        return true;
-    }
-
 
 }
