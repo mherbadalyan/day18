@@ -38,8 +38,12 @@ public class Triangle {
         this.sideC = sideC;
     }
 
+    public int perimeter() {
+        return sideA + sideB + sideC;
+    }
+
     public int area() {
-        double temp = (sideA + sideB + sideC) / 2;
+        double temp = perimeter() / 2;
         return (int) Math.sqrt(temp * (temp - sideA) * (temp - sideB) * (temp - sideC));
     }
 }

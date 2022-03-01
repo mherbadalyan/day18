@@ -38,7 +38,7 @@ public class PersonValidator {
      * @return
      */
     public static boolean isValidGender(String gender) {
-        return (gender != null && (gender.toLowerCase().equals("male") || gender.toLowerCase().equals("female")));
+        return (gender != null && (gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("female")));
     }
 
     /**

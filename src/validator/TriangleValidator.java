@@ -1,5 +1,4 @@
 package validator;
-
 import models.*;
 
 public class TriangleValidator {

@@ -1,9 +1,7 @@
 import models.Person;
 import models.Store;
 import models.Triangle;
-
 import java.util.Scanner;
-
 import static validator.PersonValidator.*;
 import static validator.StoreValidator.*;
 import static validator.TriangleValidator.*;
