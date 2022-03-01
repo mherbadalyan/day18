@@ -48,7 +48,7 @@ public class PersonValidator {
      * @return
      */
     public static boolean isValidPassportID(String passportID) {
-        return (passportID != null && passportID.length() == 8 && passportID.substring(0, 2).equals("AN") && isNum(passportID.substring(2)));
+        return (passportID != null && passportID.length() == 8 && passportID.startsWith("AN") && isNum(passportID.substring(2)));
     }
 
     /**
